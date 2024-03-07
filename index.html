@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Time converter</title>
+        <link rel="icon" href="http://203.193.173.125/buildriseshine/favicon.png" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body>
+        <header>
+            <div class="d-flex bg-gradient">
+                <div class="d-flex flex-grow-1">
+                    <nav class="courseTitle">
+                    </nav>
+                    <div class="flex-grow-1">
+                        <div class="d-flex ps-3 align-items-center">
+                            <div class="flex-grow-1">
+                                <h4>API: Time Converter</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="selector-container">
+              <label for="countrySelector-1">Select Country 1:</label>
+              <select id="countrySelector-1">
+                <option value="0">-- Select Country --</option>
+                <option value="Africa/Abidjan">Africa/Abidjan</option>
+                <option value="Africa/Algiers">Africa/Algiers</option>
+                <option value="Africa/Bissau">Africa/Bissau</option>
+                <option value="Africa/Cairo">Africa/Cairo</option>
+                <option value="Africa/Casablanca">Africa/Casablanca</option>
+                <option value="Africa/Ceuta">Africa/Ceuta</option>
+                <option value="America/Adak">America/Adak</option>
+                <option value="America/Anchorage">America/Anchorage</option>
+                <option value="America/Araguaina">America/Araguaina</option>
+                <option value="America/Argentina/Buenos_Aires">
+                  America/Argentina/Buenos_Aires
+                </option>
+                <option value="America/Bahia">America/Bahia</option>
+                <option value="America/Belem">America/Belem</option>
+                <option value="America/Cancun">America/Cancun</option>
+                <option value="America/Dawson">America/Dawson</option>
+                <option value="America/Chicago">America/Chicago</option>
+                <option value="Asia/Almaty">Asia/Almaty</option>
+                <option value="Asia/Amman">Asia/Amman</option>
+                <option value="Asia/Anadyr">Asia/Anadyr</option>
+                <option value="Asia/Aqtau">Asia/Aqtau</option>
+                <option value="Asia/Aqtobe">Asia/Aqtobe</option>
+                <option value="Asia/Ashgabat">Asia/Ashgabat</option>
+                <option value="Asia/Atyrau">Asia/Atyrau</option>
+                <option value="Europe/Saratov">Europe/Saratov</option>
+                <option value="Europe/Simferopol">Europe/Simferopol</option>
+                <option value="Indian/Chagos">Indian/Chagos</option>
+                <option value="Indian/Maldives">Indian/Maldives</option>
+                <option value="Indian/Mauritius">Indian/Mauritius</option>
+                            </select>
+                            <div id="gmtTime-1" class="time-display"></div>
+                        </div>
+
+                        <div class="selector-container">
+                            <label for="countrySelector-2">Select Country 2:</label>
+                            <select id="countrySelector-2">
+                                <option value="0">-- Select Country --</option>
+                                <option value="Africa/Abidjan">Africa/Abidjan</option>
+                                <option value="Africa/Algiers">Africa/Algiers</option>
+                                <option value="Africa/Bissau">Africa/Bissau</option>
+                                <option value="Africa/Cairo">Africa/Cairo</option>
+                                <option value="Africa/Casablanca">Africa/Casablanca</option>
+                                <option value="Africa/Ceuta">Africa/Ceuta</option>
+                                <option value="America/Adak">America/Adak</option>
+                                <option value="America/Anchorage">America/Anchorage</option>
+                                <option value="America/Araguaina">America/Araguaina</option>
+                                <option value="America/Argentina/Buenos_Aires">
+                                  America/Argentina/Buenos_Aires
+                                </option>
+                                <option value="America/Bahia">America/Bahia</option>
+                                <option value="America/Belem">America/Belem</option>
+                                <option value="America/Cancun">America/Cancun</option>
+                                <option value="America/Dawson">America/Dawson</option>
+                                <option value="America/Chicago">America/Chicago</option>
+                                <option value="Asia/Almaty">Asia/Almaty</option>
+                                <option value="Asia/Amman">Asia/Amman</option>
+                                <option value="Asia/Anadyr">Asia/Anadyr</option>
+                                <option value="Asia/Aqtau">Asia/Aqtau</option>
+                                <option value="Asia/Aqtobe">Asia/Aqtobe</option>
+                                <option value="Asia/Ashgabat">Asia/Ashgabat</option>
+                                <option value="Asia/Atyrau">Asia/Atyrau</option>
+                                <option value="Europe/Saratov">Europe/Saratov</option>
+                                <option value="Europe/Simferopol">Europe/Simferopol</option>
+                                <option value="Indian/Chagos">Indian/Chagos</option>
+                                <option value="Indian/Maldives">Indian/Maldives</option>
+                                <option value="Indian/Mauritius">Indian/Mauritius</option>
+                            </select>
+                            <div id="gmtTime-2" class="time-display"></div>
+  </div>
+</div>
+
+        </main>
+
+        <footer class="footer footer-dark">
+            <div class="d-flex justify-content-center px-5">
+                <div>
+                    <button onclick="setTheme('#1A4B84')" class="theme-switch theme-switch-chathams_blue"></button>
+                    <button onclick="setTheme('#991E14')" class="theme-switch theme-switch-tamarillo"></button>
+                    <button onclick="setTheme('#FEAD06')" class="theme-switch theme-switch-yellow_sea"></button>
+                </div>
+            </div>
+        </footer>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
